@@ -26,4 +26,10 @@ public class Apolice {
     public void setValorPremio(float valorPremio) {
         this.valorPremio = valorPremio;
     }
+
+    public void imprimir(){
+        System.out.println("nomeSegurado = " + nomeSegurado);
+        System.out.println("idade = " + idade);
+        System.out.println("valorPremio = " + valorPremio);
+    }
 }

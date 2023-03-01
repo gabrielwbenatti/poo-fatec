@@ -28,8 +28,8 @@ public class Apolice {
     }
 
     public void imprimir(){
-        System.out.println("nomeSegurado = " + nomeSegurado);
-        System.out.println("idade = " + idade);
-        System.out.println("valorPremio = " + valorPremio);
+        System.out.println("nomeSegurado = " + getNomeSegurado());
+        System.out.println("idade = " + getIdade());
+        System.out.println("valorPremio = " + getValorPremio());
     }
 }

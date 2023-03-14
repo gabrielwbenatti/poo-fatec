@@ -2,10 +2,12 @@ import java.util.Scanner;
 
 public class ContaTeste {
     public static Conta cc = new Conta();
-    public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int op;
+        Scanner scanner = new Scanner(System.in);
+        ContaTeste contaTeste = new ContaTeste();
+
+        int op = 0;
 
         do {
             System.out.println("Digite a opcao desejada: ");
@@ -18,16 +20,16 @@ public class ContaTeste {
 
             switch (op) {
                 case 1:
-                    exeCadastrar();
+                    contaTeste.execCadastrar();
                     break;
                 case 2:
-                    exeDepositar();
+                    contaTeste.execDepositar();
                     break;
                 case 3:
-                    exeSacar();
+                    contaTeste.exeSacar();
                     break;
                 case 4:
-                    exeConsultar();
+                    contaTeste.execConsultar();
                     break;
                 case 9:
                     break;
@@ -39,7 +41,7 @@ public class ContaTeste {
         System.out.println("Aplicacao encerrada");
     }
 
-    public static void exeCadastrar() {
+    public void execCadastrar() {
         System.out.println("Digite: ");
 
         System.out.println("Nro da Conta: ");
@@ -55,11 +57,11 @@ public class ContaTeste {
         cc.setSaldo(Double.parseDouble(scanner.nextLine()));
     }
 
-    public static void exeConsultar() {
+    public void execConsultar() {
         cc.imprimir();
     }
 
-    public static void exeSacar() {
+    public void exeSacar() {
         System.out.println("Digite o valor de saque: ");
         double valor = Double.parseDouble(scanner.nextLine());
 
@@ -70,7 +72,7 @@ public class ContaTeste {
         }
     }
 
-    public static void exeDepositar() {
+    public void execDepositar() {
         System.out.println("Digite o valor de deposito: ");
         double valor = Double.parseDouble(scanner.nextLine());
 

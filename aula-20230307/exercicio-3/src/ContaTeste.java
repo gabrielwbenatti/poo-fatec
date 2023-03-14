@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class ContaTeste {
     public static Conta cc = new Conta();
+    Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         ContaTeste contaTeste = new ContaTeste();
 
         int op = 0;
@@ -16,7 +16,7 @@ public class ContaTeste {
             System.out.println("3 - Sacar");
             System.out.println("4 - Consultar");
             System.out.println("9 - Sair");
-            op = Integer.parseInt(scanner.nextLine());
+            op = Integer.parseInt(contaTeste.scanner.nextLine());
 
             switch (op) {
                 case 1:

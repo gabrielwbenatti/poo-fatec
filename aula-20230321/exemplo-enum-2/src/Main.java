@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Meses mes;
+        mes = Meses.jun;
+
+        System.out.println(mes);
     }
 }

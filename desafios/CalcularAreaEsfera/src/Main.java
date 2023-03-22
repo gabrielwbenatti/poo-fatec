@@ -10,6 +10,8 @@ public class Main {
         double raio = Double.parseDouble(main.sc.nextLine());
 
         Esfera esfera = new Esfera();
+        double volume = esfera.getVolume(raio);
 
+        System.out.println("O volume dessa esfera eh " + volume);
     }
 }

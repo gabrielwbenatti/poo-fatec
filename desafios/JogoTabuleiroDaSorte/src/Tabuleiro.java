@@ -23,4 +23,19 @@ public class Tabuleiro {
             System.out.println();
         }
     }
+
+    public int conferirQtdeNumeros(int n1, int n2) {
+        int qtdeN1 = 0;
+        int qtdeN2 = 0;
+
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                int value = tabuleiro[i][j];
+                if(value==n1) qtdeN1++;
+                if(value==n2) qtdeN2++;
+            }
+        }
+
+        return qtdeN1 + qtdeN2;
+    }
 }
